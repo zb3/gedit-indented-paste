@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python3
+Module=indentedpaste
+IAge=3
+Name=Indented paste
+Description=Paste reindented text using Ctrl-Shift-V / Shift-Middle
+Authors=zb3
+Copyright=Copyright © 2019 zb3
+Website=http://www.gedit.org
+Version=3.34.0
