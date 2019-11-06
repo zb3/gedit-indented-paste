@@ -45,9 +45,6 @@ class IndentedPasteWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         if view and hasattr(view, "indented_paste_view_activatable"):
             view.indented_paste_view_activatable.indented_paste()
 
-
-import time
-
 class IndentedPasteViewActivatable(GObject.Object, Gedit.ViewActivatable):
     view = GObject.Property(type=Gedit.View)
 
@@ -68,9 +65,7 @@ class IndentedPasteViewActivatable(GObject.Object, Gedit.ViewActivatable):
         delattr(self.view, "indented_paste_view_activatable")
 
     def on_clipboard_text(self, clipboard, text, view):
-        ts = time.time()
         do_indented_paste(view, text)
-        print('took', time.time() - ts)
 
     def indented_paste(self, primary=False):
         buff = self.view.get_buffer()
