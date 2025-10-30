@@ -11,5 +11,9 @@ This plugin doesn't detect and convert the indentation style of the pasted text 
 ## Installation
 1. Make sure your gedit version is up to date.
 2. Copy project folder to `~/.local/share/gedit/plugins`
-3. Enable this plugin.
+3. Go to that project folder
+4. Install `gedit-devel`
+5. Build using `make`
+6. Enable this plugin.
 
+Steps 3-5 are optional but recommended.. the binary plugin is included here for convenience.
